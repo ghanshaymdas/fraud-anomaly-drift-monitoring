@@ -35,3 +35,7 @@ def main():
     print("Smoke test passed.")
     print(f"Drifted feature fraction: {report['drift_fraction']:.2%}")
     print(f"Confidence PSI: {report['confidence_psi']:.4f}")
+
+
+if __name__ == "__main__":
+    main()
