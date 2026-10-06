@@ -12,7 +12,8 @@ def build_supervised_model(random_state: int = 42) -> Pipeline:
     return Pipeline(
         steps=[
             ("scaler", StandardScaler()),
-            ("classifier",
+            (
+                "classifier",
                 LogisticRegression(
                     class_weight="balanced",
                     max_iter=2000,
